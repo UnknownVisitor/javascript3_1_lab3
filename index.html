@@ -7,16 +7,23 @@
     <link href="style.css" rel="stylesheet">
 </head>
 <body>
-    <h1>Wyszukiwanie kraju po nazwie</h1>
+    <h1>Wyszukiwanie krajów według regionu</h1>
     
     <div class="controls">
-        <label for="country-input">Wprowadź nazwę kraju:</label>
-        <input type="text" id="country-input" value="Poland" placeholder="np. Germany, France, Poland">
-        <button id="search-button">Szukaj</button>
+        <label for="region-select">Wybierz region:</label>
+        <select id="region-select">
+            <option value="">-- Wybierz Region --</option>
+            <option value="Africa">Africa</option>
+            <option value="Americas">Americas</option>
+            <option value="Asia">Asia</option>
+            <option value="Europe">Europe</option>
+            <option value="Oceania">Oceania</option>
+        </select>
     </div>
 
     <div id="result-area">
-        </div>
+        <p>Proszę wybrać region z listy.</p>
+    </div>
 
     <script src="script.js"></script>
 </body>
