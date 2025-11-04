@@ -7,22 +7,19 @@
     <link href="style.css" rel="stylesheet">
 </head>
 <body>
-    <h1>Wyszukiwanie krajów według regionu</h1>
+    <h1>Wyszukiwanie kraju po stolicy (Com3_1.4)</h1>
     
     <div class="controls">
-        <label for="region-select">Wybierz region:</label>
-        <select id="region-select">
-            <option value="">-- Wybierz Region --</option>
-            <option value="Africa">Africa</option>
-            <option value="Americas">Americas</option>
-            <option value="Asia">Asia</option>
-            <option value="Europe">Europe</option>
-            <option value="Oceania">Oceania</option>
-        </select>
+        <label for="capital-input">Wprowadź stolicę:</label>
+        <input type="text" id="capital-input" value="Warsaw" placeholder="np. London, Paris, Warsaw">
+        <button id="search-button">Szukaj</button>
     </div>
 
     <div id="result-area">
-        <p>Proszę wybrać region z listy.</p>
+        </div>
+
+    <div id="details-area">
+        <p>Kliknij na wiersz w tabeli, aby wyświetlić szczegóły kraju.</p>
     </div>
 
     <script src="script.js"></script>
